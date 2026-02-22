@@ -128,7 +128,7 @@ cd nba-data-warehouse
 2. Configure environment
 Copy .env.example to .env and fill in:
 
-ini
+init
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_DEFAULT_REGION=us-east-1
@@ -181,13 +181,13 @@ The DAG nba_pipeline is scheduled to run monthly (e.g., at 2 AM on the 1st). You
 Monitor logs in Airflow and AWS Glue console.
 
 7. Connect BI tool to Metastore
-Your BI tool needs to connect to the Hive Metastore Thrift endpoint.
+Start a Metastore with docker
 
-If running locally: localhost:9083
+docker run -d -p 3000:3000 --name metabase metabase/metabase
 
-If on a remote server: <server-ip>:9083
+If running locally: localhost:3000
 
-Use a Hive JDBC driver or native connector (e.g., in Tableau, use “Hive” connector).
+Use a AWS Athena connector
 
 Point to the Gold tables – the metastore provides schema and partition locations on S3.
 
