@@ -1,0 +1,6 @@
+#ignore files in Airflows logs
+Airflow/logs/
+Airflows/dags/_pycache__/
+.env
+Airflow/.env
+.DS_Store
