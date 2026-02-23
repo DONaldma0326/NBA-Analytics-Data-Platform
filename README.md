@@ -23,6 +23,9 @@ This project demonstrates a **hybrid cloud‑native data platform**:
 ---
 
 ## 🏗️ Architecture
+
+![alt text](image-1.png)
+
 Kaggle Dataset
 │
 ▼
@@ -190,7 +193,7 @@ If running locally: localhost:3000
 Use a AWS Athena connector
 
 Point to the Gold tables – the metastore provides schema and partition locations on S3.
-
+```
 📊 Example Dashboard
 (Insert a screenshot of your final dashboard here)
 
@@ -199,3 +202,5 @@ Player Comparison: Select two players to compare season stats side‑by‑side.
 Team Trends: Line chart of points per game over the last 10 seasons.
 
 Leaderboards: Top 10 scorers, rebounders, assist leaders for a given year.
+
+![alt text](image.png)
