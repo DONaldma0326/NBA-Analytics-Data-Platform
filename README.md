@@ -22,7 +22,7 @@ This project demonstrates a **hybrid data platform**:
 
 ## 🏗️ Architecture
 
-![alt text](image-1.png)
+![alt text](Image/image-1.png)
 
 ├──► Kaggle Dataset
 
@@ -118,12 +118,12 @@ docker-compose up -d
 ```
 This launches:
 Airflow webserver & scheduler (UI at http://localhost:8080)
-![alt text](image-2.png)
+![alt text](Image/image-2.png)
 
 Sign in and create connection
-![alt text](image-3.png)
+![alt text](Image/image-3.png)
 
-![alt text](image-4.png)
+![alt text](Image/image-4.png)
 insert the key and secret you got in step2
 
 
@@ -135,15 +135,15 @@ docker run -d -p 3000:3000 --name metabase metabase/metabase
 This lauches:
 metabase dashboard (UI at http://localhost:3000)
 
-![alt text](image-5.png)
+![alt text](Image/image-5.png)
 **Sign up may require when first launch
 
 
-![alt text](image-6.png)
+![alt text](Image/image-6.png)
 Select Amazon Athena
 Go to the admin portal and select create a database
 Fill the required information
-![alt text](image-7.png)
+![alt text](Image/image-7.png)
 The database connection is established and can be used to build dashboard now !!!
 
 📊 Example Dashboard
@@ -156,4 +156,4 @@ Team Trends: Line chart of points per game over the last 10 seasons.
 
 
 
-![alt text](image.png)
+![alt text](Image/image.png)
